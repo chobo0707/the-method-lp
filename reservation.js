@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    console.log('送信データ:', payload);
 
-  fetch('https://script.google.com/macros/s/AKfycbxRUCRFgGlfT_H6N2xHlRgFt9xJqcMGaHAdUO150l4QL1YzVnt9WObaaA2CxSm_pUq5/exec')
+  fetch('https://script.google.com/macros/s/AKfycbwZXoGw0uV2ciDclKA1PQhq5FFfAgOrCPGi-0wxmy_69HREuJh6H5TBqsvkODJUbYVA/exec')
     .then(response => response.json())
     .then(data => {
       const d29 = data['2025-11-29'];
@@ -53,7 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
       visitors: data.get('visitors')
     };
 
-    fetch('https://script.google.com/macros/s/AKfycbxRUCRFgGlfT_H6N2xHlRgFt9xJqcMGaHAdUO150l4QL1YzVnt9WObaaA2CxSm_pUq5/exec', {
+    console.log('送信データ:', payload);
+
+    fetch('https://script.google.com/macros/s/AKfycbwZXoGw0uV2ciDclKA1PQhq5FFfAgOrCPGi-0wxmy_69HREuJh6H5TBqsvkODJUbYVA/exec', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
