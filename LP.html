@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE Method | 宣伝LP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="loader">
+    <div class="logo-glitch">
+      <span class="logo-line">THE</span><br>
+      <span class="logo-line">Method</span>
+    </div>
+    
+  </div>
+  
+
+  <header>
+    <div class="site-title">
+      <span class="title-line">The</span><br>
+      <span class="title-line">Method</span>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <div class="overlay-menu" id="overlay-menu">
+    <nav>
+      <ul>
+        <li><a href="#about">あらすじ</a></li>
+        <li><a href="#3">公演概要</a></li>
+        <li><a href="#4">あなたのことば</a></li>
+        <li><a href="#info">公演情報</a></li>
+        <li><a href="#access">アクセス</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section class="fade-in-section hero">
+    <div class="hero-content">
+      <h1 class="title">Bootleg</h1>
+      <p class="subtitle">あるいは#光と音_ことばについて</p>
+    </div>
+  </section>
+
+  <section class="fade-in-section about" id="about">
+    <h2 id="section-title">物語のあらすじ</h2>
+    <p>The quick brown fox jumps over the lazy dog
+    </p>
+  </section>
+
+  <section class="fade-in-section main-content">
+    <h2 id="3">公演概要</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus, 
+      ligula vitae pretium interdum, massa sem faucibus nulla, eget sodales 
+      sapien lorem id quam. Sed consequat, magna sed malesuada bibendum, justo 
+      turpis tincidunt enim, nec facilisis tortor leo at elit.
+    </p>
+    <p>
+      Curabitur fermentum, nulla ut efficitur feugiat, sapien turpis eleifend 
+      elit, sit amet fermentum justo nulla non tortor. Integer vel lacinia justo. 
+      Quisque feugiat purus ac diam dignissim luctus.
+    </p>
+  </section>
+
+  <section  id="contact" class="fade-in-section fade-in-section1">
+    <div id="4" class="form-toggle-button" onclick="toggleForm()">
+      あなたの言葉を聞かせてください
+    </div>
+    <div id="form-container" class="form-container hidden">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLzHV6RHOQ8RYAllRf8PN5aWRDGvlYOwDLSC2dPZBW8dOkXg/viewform?embedded=true" width="100%" height="450" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+    </div>
+  </section>
+  
+
+  <section class="fade-in-section info" id="info">
+    <h2 id="section-title">公演情報</h2>
+    <ul>
+      <p>『Bootleg #光と音_ことばについて』</p>
+      <li>日時：2025年11月29日〜30日</li>
+      <li>場所：水性</li>
+      <li>出演：海浜水族園</li>
+    </ul>
+  </section>
+
+  <section id="reservation">
+  <h2>ご予約フォーム</h2>
+  <form id="reservation-form">
+    <div id="availability">
+    <p id="remaining-29">2025-11-29：読み込み中...</p>
+    <p id="remaining-30">2025-11-30：読み込み中...</p>
+  </div>
+    <label>お名前:<input type="text" name="name" required></label><br>
+    <label>フリガナ:<input type="text" name="furigana" required></label><br>
+    <label>メールアドレス:<input type="email" name="email" required></label><br>
+    <label>ご希望の日程:<br>
+      <label id="label-29">
+  <input type="checkbox" name="date" value="2025-11-29" id="checkbox-29">
+  <span class="date-text">2025-11-29</span>
+  <br>
+</label>
+<label id="label-30">
+  <input type="checkbox" name="date" value="2025-11-30" id="checkbox-30">
+  <span class="date-text">2025-11-30</span>
+</label>
+    </label><br>
+    <label>枚数:<select name="quantity" required>
+      <option value="">選択してください</option>
+      <option value="1">1枚</option>
+      <option value="2">2枚</option>
+      <option value="3">3枚</option>
+    </select></label><br>
+    <label>来場者全員のお名前:<textarea name="visitors" required></textarea></label><br>
+    <button type="submit">送信</button>
+  </form>
+  <p id="form-message"></p>
+</section>
+
+
+  <section class="fade-in-section" id="access">
+    <h2 id="section-title">アクセス</h2>
+    <p>東京都中野区新井1-14-14 1F（中野駅北口徒歩8分）</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.617488781218!2d139.66445767532505!3d35.71102947257772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f3b57024a327%3A0x742daf36cdc850a2!2z5rC05oCn!5e0!3m2!1sja!2sjp!4v1747230147323!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p> 2025 The Method.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const faders = document.querySelectorAll(".fade-in-section");
+  
+      const options = {
+        threshold: 0.1
+      };
+  
+      const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("appear");
+            observer.unobserve(entry.target); // 一度だけ発火
+          }
+        });
+      }, options);
+  
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
+    });
+  </script>
+  <script src="reservation.js"></script>
+
+</body>
+</html>
